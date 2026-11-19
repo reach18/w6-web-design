@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+.content {
+    background-color:aqua;
+    width: clamp(300px, 100%, 800px);
+    height: 300px;
+    text-align: center;
+  }
+.big {
+    display: none;
+  }
+@media only screen and (min-width: 600px) {
+      .small {
+        display: none;
+      }
+      .big {
+        display: inline;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <span class="small">I'm SMALL</span>
+      <span class="big">I'm BIG </span>
+    </div>
+  </div>
+</body>
+</html>

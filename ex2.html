@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.menu{
+    display: none;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+.list {
+    display:flex;
+    gap: 20px;
+    list-style:none;
+}
+@media (max-width: 768px) {
+    .list {
+        display: none;
+    }
+    .menu{
+        display:block;
+    }
+}
+    </style>
+<body>
+<div class="navbar">
+    <h2>Logo</h2>
+    <ul class="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+     <div class="menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+     </div>
+</div>
+
+</body>
+</html>

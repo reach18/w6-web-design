@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header ,footer {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+    .box {
+        display : flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main , .sidebar {
+        padding: 20px;
+        background-color: lightblue;
+    }
+    @media (min-width: 600px) and (max-width: 900px) {
+        .box {
+            flex-direction: row;
+        }
+        .main {
+            width: 50%;
+        }
+        .sidebar {
+            width: 50%;
+        }
+    }
+    @media (min-width: 900px) {
+        header ,footer {
+            padding: 30px;
+            font-size: 24px;
+        }
+        .box{
+            flex-direction: row;
+        }
+        .main {
+            width: 70%;
+        }
+        .sidebar {
+            width: 30%;
+        }
+    }
+
+
+</style>
+<body>
+    <header>responsive header</header>
+    <div class = "box">
+        <div class = "main">main content</div>
+        <div class = "sidebar">side bar</div>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>
